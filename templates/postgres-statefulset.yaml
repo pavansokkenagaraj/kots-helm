@@ -96,7 +96,6 @@ spec:
         {{- include "kots-helm.labels" . | nindent 8 }}
       name: kotsadm-postgres
     spec:
-      storageClassName: "local-path"
       accessModes:
       - ReadWriteOnce
       resources:
